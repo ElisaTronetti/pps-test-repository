@@ -1,8 +1,8 @@
-<!-- TODO add components ID -->
-Filaseta Angelo (995855) -  <angelo.filaseta@studio.unibo.it>  
-Sanchi Piero (XXXXXX) - <piero.sanchi@studio.unibo.it>   
-Talmi Alessandro (XXXXXX) - <alessandro.talmi@studio.unibo.it>  
-Tronetti Elisa (XXXXXX) - <elisa.tronetti@studio.unibo.it>  
+## Componenti del gruppo
+**Filaseta Angelo** (995855) -  <angelo.filaseta@studio.unibo.it>  
+**Sanchi Piero** (XXXXXX) - <piero.sanchi@studio.unibo.it>   
+**Talmi Alessandro** (XXXXXX) - <alessandro.talmi@studio.unibo.it>  
+**Tronetti Elisa** (XXXXXX) - <elisa.tronetti@studio.unibo.it>  
 
 {% include_relative chapters/ch-1-process.md %}  
 {% include_relative chapters/ch-2-requirements.md %}  
