@@ -1,4 +1,3 @@
-# PPS PROJECTS TITLE <!-- TODO add title -->
 <!-- TODO add components ID -->
 Filaseta Angelo (995855) -  <angelo.filaseta@studio.unibo.it>  
 Sanchi Piero (XXXXXX) - <piero.sanchi@studio.unibo.it>   

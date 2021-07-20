@@ -1,11 +1,11 @@
-## Restrospettiva
+# Restrospettiva
 <!-- NOTA: (descrizione finale dettagliata dell'andamento dello sviluppo, del backlog, delle iterazioni; commenti finali) -->
-### Commenti Finali
+## Commenti Finali
 
-#### Filaseta Angelo
+### Filaseta Angelo
 
-#### Sanchi Piero
+### Sanchi Piero
 
-#### Talmi Alessandro
+### Talmi Alessandro
 
-#### Tronetti Elisa
+### Tronetti Elisa

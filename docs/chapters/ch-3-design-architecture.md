@@ -1,10 +1,10 @@
-## Design architetturale
+# Design architetturale
 
-### Architettura complessiva
+## Architettura complessiva
 
-### Descrizione di pattern architetturali utilizzati
+## Descrizione di pattern architetturali utilizzati
 
-### Componenti del sistema distribuito
+## Componenti del sistema distribuito
 
-### Scelte tecnologiche cruciali ai fini architetturali
+## Scelte tecnologiche cruciali ai fini architetturali
 <!-- NOTA: corredato da pochi ma efficaci diagrammi -->

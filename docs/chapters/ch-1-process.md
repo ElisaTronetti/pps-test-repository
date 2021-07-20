@@ -1,15 +1,15 @@
-## Processo di sviluppo adottato
+# Processo di sviluppo adottato
 
-### Modalità di divisione in itinere dei task
+## Modalità di divisione in itinere dei task
 
-### Meeting ed iterazioni pianificate
+## Meeting ed iterazioni pianificate
 
-### Modalità di revisione in itinere dei task
+## Modalità di revisione in itinere dei task
 
-### Scelta degli strumenti
+## Scelta degli strumenti
 
-#### Test
+### Test
 
-#### Build
+### Build
 
-#### Continous Integration
+### Continous Integration

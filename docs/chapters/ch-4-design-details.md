@@ -1,8 +1,8 @@
-## Design di dettaglio
+# Design di dettaglio
 
-### Scelte rilevanti
+## Scelte rilevanti
 
-### Pattern di progettazione
+## Pattern di progettazione
 
-### Organizzazione del codice
+## Organizzazione del codice
 <!-- NOTA: corredato da pochi ma efficaci diagrammi -->
