@@ -1,15 +1,13 @@
-## Welcome to GitHub Pages
+# PPS PROJECTS TITLE <!-- TODO add title -->
+<!-- TODO add components ID -->
+Filaseta Angelo (995855) -  <angelo.filaseta@studio.unibo.it>  
+Sanchi Piero (XXXXXX) - <piero.sanchi@studio.unibo.it>   
+Talmi Alessandro (XXXXXX) - <alessandro.talmi@studio.unibo.it>  
+Tronetti Elisa (XXXXXX) - <elisa.tronetti@studio.unibo.it>  
 
-You can use the [editor on GitHub](https://github.com/AngeloFilaseta/pps-test-repository/edit/main/docs/index.md) to maintain and preview the content for your website in Markdown files.
-
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
-
-{% include_relative chapter-1.md %}
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/AngeloFilaseta/pps-test-repository/settings/pages). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
+{% include_relative chapters/ch-1-process.md %}  
+{% include_relative chapters/ch-2-requirements.md %}  
+{% include_relative chapters/ch-3-design-architecture.md %}  
+{% include_relative chapters/ch-4-design-details.md %}  
+{% include_relative chapters/ch-5-implementation.md %}  
+{% include_relative chapters/ch-6-retrospective.md %}  
