@@ -3,7 +3,7 @@ import Dependencies._
 ThisBuild / scalaVersion     := "2.12.8"
 ThisBuild / version          := "0.1.0-SNAPSHOT"
 ThisBuild / organization     := "com.example"
-ThisBuild / organizationName := "example"
+ThisBuild / organizationName := "TeFaTaPs"
 
 lazy val root = (project in file("."))
   .settings(
@@ -38,3 +38,5 @@ lazy val root = (project in file("."))
 //   else Some("releases" at nexus + "service/local/staging/deploy/maven2")
 // }
 // ThisBuild / publishMavenStyle := true
+
+coverageEnabled := true

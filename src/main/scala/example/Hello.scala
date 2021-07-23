@@ -1,8 +1,14 @@
 package example
 
 object Hello extends Greeting with App {
-  println(greeting)
+
+  def printGreetings() {
+    println(greeting)
+  }
+  printGreetings()
 }
+
+
 
 trait Greeting {
   lazy val greeting: String = "hello"
