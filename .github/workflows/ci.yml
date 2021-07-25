@@ -57,9 +57,6 @@ jobs:
       - name: Coverage
         run: sbt --client '++${{ matrix.scala }}; coverageReport'
 
-      - name: Copy & Paste Detection
-        run: sbt --client '++${{ matrix.scala }}; cpd'
-
       - name: Compress target directories
         run: tar cf targets.tar target project/target
 

@@ -42,37 +42,21 @@ ThisBuild / homepage    := Some(url("https://github.com/example/project")) //TOD
    )
  )
 
-resolvers += "Atlassian's Maven Public Repository" at "https://repo.maven.apache.org/maven2/"
-
 // Tests Configurations
 val NumberOfTestProcessors = 4
 // Run tests in parallel
 IntegrationTest / testForkedParallel := true
 concurrentRestrictions in Global := Seq(Tags.limitAll(NumberOfTestProcessors))
 
-
-// Custom task for quality assurance
-lazy val check = taskKey[Unit]("Run CPD and Scoverage tasks")
-
-check := {
-  cpd.value
-  coverageReport.value
-}
-
 // Plugins Configurations
 
 // scoverage plugin keys
 coverageEnabled := true
-coverageMinimum := 70 //%
+coverageMinimum := 60 //%
 coverageFailOnMinimum := true
 coverageHighlighting := true
 
-// sbt-cpd keys
-cpdMinimumTokens := 50
-cpdFailOnDuplicates := true
-
-//
+// Add scoverage to the workflow
 ThisBuild / githubWorkflowBuildPostamble ++= List(
   WorkflowStep.Sbt(List("coverageReport"), name = Some("Coverage")),
-  WorkflowStep.Sbt(List("cpd"), name = Some("Copy & Paste Detection"))
 )
