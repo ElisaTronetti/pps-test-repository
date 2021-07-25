@@ -55,6 +55,7 @@ concurrentRestrictions in Global := Seq(Tags.limitAll(NumberOfTestProcessors))
 lazy val check = taskKey[Unit]("Run CPD and Scoverage tasks")
 
 check := {
+  cpd.value
   coverageReport.value
 }
 
@@ -65,6 +66,10 @@ coverageEnabled := true
 coverageMinimum := 70 //%
 coverageFailOnMinimum := true
 coverageHighlighting := true
+
+// sbt-cpd keys
+cpdMinimumTokens := 50
+cpdFailOnDuplicates := true
 
 //
 ThisBuild / githubWorkflowBuildPostamble ++= List(
