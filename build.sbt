@@ -1,5 +1,4 @@
 import Dependencies._
-import sbt.Developer
 
 ThisBuild / scalaVersion := "2.12.8"
 
@@ -18,10 +17,10 @@ val NumberOfTestProcessors = 4
 IntegrationTest / testForkedParallel := true
 concurrentRestrictions in Global := Seq(Tags.limitAll(NumberOfTestProcessors))
 
-// Plugins Configurations
+/* Plugins Configurations */
 
 // a publish job is not desired
-githubWorkflowPublishTargetBranches := Seq()
+ThisBuild / githubWorkflowPublishTargetBranches := Seq()
 
 // scoverage plugin keys
 coverageEnabled := true
