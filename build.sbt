@@ -12,6 +12,7 @@ lazy val root = (project in file("."))
     libraryDependencies += scalaTest % Test
   )
 
+ThisBuild / licenses    := List("Apache 2" -> new URL("http://www.apache.org/licenses/LICENSE-2.0.txt"))
 ThisBuild / description := "Some description about your project." //TODO
 ThisBuild / homepage    := Some(url("https://github.com/example/project")) //TODO
 
@@ -41,6 +42,17 @@ ThisBuild / homepage    := Some(url("https://github.com/example/project")) //TOD
      url   = url("https://github.com/ElisaTronetti")
    )
  )
+
+ ThisBuild / pomIncludeRepository := { _ => false }
+ ThisBuild / publishTo := {
+   val nexus = "https://oss.sonatype.org/"
+   if (isSnapshot.value) {
+      Some("snapshots" at nexus + "content/repositories/snapshots")
+   } else {
+     Some("releases" at nexus + "service/local/staging/deploy/maven2")
+   }
+ }
+ ThisBuild / publishMavenStyle := true
 
 // Tests Configurations
 val NumberOfTestProcessors = 4
