@@ -70,3 +70,9 @@ coverageHighlighting := true
 // sbt-cpd keys
 cpdMinimumTokens := 50
 cpdFailOnDuplicates := true
+
+//
+ThisBuild / githubWorkflowBuildPostamble ++= List(
+  WorkflowStep.Sbt(List("cpd")),
+  WorkflowStep.Sbt(List("coverage"))
+)
