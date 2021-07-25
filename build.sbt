@@ -73,6 +73,6 @@ cpdFailOnDuplicates := true
 
 //
 ThisBuild / githubWorkflowBuildPostamble ++= List(
-  WorkflowStep.Sbt(List("cpd")),
-  WorkflowStep.Sbt(List("coverage"))
+  WorkflowStep.Sbt(List("coverageReport"), name = Some("Coverage")),
+  WorkflowStep.Sbt(List("cpd"), name = Some("Copy & Paste Detection"))
 )

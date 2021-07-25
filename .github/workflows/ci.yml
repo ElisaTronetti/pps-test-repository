@@ -54,9 +54,11 @@ jobs:
       - name: Build project
         run: sbt --client '++${{ matrix.scala }}; test'
 
-      - run: sbt --client '++${{ matrix.scala }}; cpd'
+      - name: Coverage
+        run: sbt --client '++${{ matrix.scala }}; coverageReport'
 
-      - run: sbt --client '++${{ matrix.scala }}; coverage'
+      - name: Copy & Paste Detection
+        run: sbt --client '++${{ matrix.scala }}; cpd'
 
       - name: Compress target directories
         run: tar cf targets.tar target project/target
