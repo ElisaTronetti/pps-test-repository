@@ -42,6 +42,8 @@ ThisBuild / homepage    := Some(url("https://github.com/example/project")) //TOD
    )
  )
 
+resolvers += "Atlassian's Maven Public Repository" at "https://repo.maven.apache.org/maven2/"
+
 // Tests Configurations
 val NumberOfTestProcessors = 4
 // Run tests in parallel
